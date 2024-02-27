@@ -5,7 +5,6 @@ from MainWindow import MainWindow
 
 session: frida.core.Session
 fun = 0x0
-last_timer_mem = 0x0
 
 mainWindow = None # type: MainWindow
 
@@ -74,23 +73,16 @@ def on_read_msg(message, data):
 
     rsi = message["payload"]["rsi"]
 
-    global last_timer_mem
     global mainWindow
 
     if rax >= 9999999:
-        if last_timer_mem != rsi and last_timer_mem != 1:
-            last_timer_mem = rsi
-            mainWindow.update(0, 0)
+        if mainWindow.last_timer_mem != rsi and mainWindow.last_timer_mem != 1: # Reach end of quest, save run
+            mainWindow.last_timer_mem = rsi
+            mainWindow.save_run()
         else:
             mainWindow.update(mainWindow.getTimeElapsed() + 1, mainWindow.getParseTotal())
     else:
         mainWindow.update(mainWindow.getTimeElapsed() ,mainWindow.getParseTotal() + rax)
-
-
-def reset(event):
-    global last_timer_mem
-    last_timer_mem = 1
-    mainWindow.update(0, 0)
 
 
 def main():

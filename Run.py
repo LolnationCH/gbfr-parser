@@ -5,8 +5,10 @@ class Run:
 
   def __init__(self, time_elapsed=0, parse_total=0):
     self.time_elapsed = time_elapsed
+    seconds = self.time_elapsed % 60 if self.time_elapsed % 60 > 9 else "0%s" % (self.time_elapsed % 60)
     self.parse_total = parse_total
-    self.dps = time_elapsed / parse_total if parse_total != 0 else 0
+    damage = self.parse_total
+    self.dps = self.parse_total // self.time_elapsed if int(seconds) > 0 else damage
 
   def toJSON(self):
     return {

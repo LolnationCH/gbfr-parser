@@ -3,6 +3,7 @@ import customtkinter
 from customtkinter import *
 from datetime import datetime
 
+from CTkListbox import CTkListbox
 from Run import Run
 
 parse_text = "%s:%s  -  %s  -  %s DPS"
@@ -12,6 +13,7 @@ app = CTk()
 class MainWindow:
   time_elapsed = 0
   parse_total = 0
+  last_timer_mem = 0x0
   runs = []
   runs_file = f'runs/{datetime.now().strftime("%Y-%m-%d_%H-%M-%S")}.json'
 
@@ -41,17 +43,13 @@ class MainWindow:
         app.saveRunButton.bind("<Button-1>", self.save_run)
 
         app.runsLabel = CTkLabel(master=app, text="Runs saved: 0", font=("Arial", 20))
-        app.runsLabel.place(relx=0.5, rely=0.5, anchor="center")
-
-        app.runEntries = CTkEntry(master=app, font=("Arial", 20))
-        app.runEntries.place(relx=0.5, rely=0.7, anchor="center")
+        app.runsLabel.place(relx=0.01, rely=0.5)
 
   def mainLoop(self):
     app.mainloop()
 
   def reset(self, event):
-    self.time_elapsed = 0
-    self.parse_total = 0
+    self.last_timer_mem = 0x0
     self.update(0,0)
 
   def update(self, time_elapsed=0, parse_total=0):
@@ -88,7 +86,6 @@ class MainWindow:
     self.runs.append(new_Run)
 
     app.runsLabel.configure(text=f"Runs saved: {len(self.runs)}")
-    app.runEntries.insert(0, f"{new_Run.time_elapsed} : {new_Run.dps}\n")
 
     os.makedirs(os.path.dirname(self.runs_file), exist_ok=True)
     if os.path.isfile(self.runs_file):
@@ -101,3 +98,5 @@ class MainWindow:
 
     with open(self.runs_file, "w") as f:
       f.write(json.dumps([run.toJSON() for run in runs], indent=4))
+
+    self.reset()
