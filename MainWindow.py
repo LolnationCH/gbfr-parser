@@ -4,8 +4,13 @@ from customtkinter import *
 from datetime import datetime
 
 from Run import Run
+from gui.ActionButtonsFrame import ActionButtonsFrame
+from gui.StatLabel import StatLabel
 
-parse_text = "%s:%s  -  %s  -  %s DPS"
+time_text = "%s:%s"
+damage_text = "%s"
+dps_text = "%s DPS"
+
 
 app = CTk()
 
@@ -15,6 +20,7 @@ class MainWindow:
   last_timer_mem = 0x0
   runs = []
   runs_file = f'runs/{datetime.now().strftime("%Y-%m-%d_%H-%M-%S")}.json'
+  mission_name = "The Tale of Bahamut's Rage"
 
   def __init__(self, isInError=False):
     customtkinter.set_appearance_mode("Dark")
@@ -30,19 +36,16 @@ class MainWindow:
         app.errLabel.place(relx=0.5, rely=0.5, anchor="center")
 
     else:
-        app.label = CTkLabel(master=app, text=parse_text % (0, "00", 0, 0), font=("Arial", 20))
-        app.label.place(relx=0.5, rely=0.1, anchor="center")
+        app.StatLabel = StatLabel(app, self.mission_name)
+        app.StatLabel.grid(sticky="nsew")
+        app.grid_rowconfigure(0, weight=1)
+        app.grid_columnconfigure(0, weight=1)
 
-        app.resetButton = CTkButton(master=app, text="Reset")
-        app.resetButton.place(relx=0.3, rely=0.3, anchor="center")
-        app.resetButton.bind("<Button-1>", self.reset)
-
-        app.saveRunButton = CTkButton(master=app, text="Save Run")
-        app.saveRunButton.place(relx=0.7, rely=0.3, anchor="center")
-        app.saveRunButton.bind("<Button-1>", self.save_run)
+        app.buttonFrame = ActionButtonsFrame(app, self)
+        app.grid_rowconfigure(1, weight=1)
 
         app.runsLabel = CTkLabel(master=app, text="Runs saved: 0", font=("Arial", 20))
-        app.runsLabel.place(relx=0.01, rely=0.5)
+        app.runsLabel.grid(row=2, column=0)
 
   def mainLoop(self):
     app.mainloop()
@@ -54,19 +57,7 @@ class MainWindow:
   def update(self, time_elapsed=0, parse_total=0):
     self.time_elapsed = time_elapsed
     self.parse_total = parse_total
-
-    if time_elapsed == 0 or parse_total == 0:
-        app.label.configure(text=parse_text % (0, "00", 0, 0))
-        return
-
-    seconds = self.time_elapsed % 60 if self.time_elapsed % 60 > 9 else "0%s" % (self.time_elapsed % 60)
-    damage = self.parse_total
-    dps = self.parse_total // self.time_elapsed if int(seconds) > 0 else damage
-    app.label.configure(text=parse_text % (
-        self.time_elapsed // 60,
-        seconds,
-        f"{damage:,}",
-        f"{dps:,}"))
+    app.StatLabel.update(time_elapsed, parse_total)
 
   def setParseTotal(self, parse_total):
     self.parse_total = parse_total
@@ -100,4 +91,4 @@ class MainWindow:
     with open(self.runs_file, "w") as f:
       f.write(json.dumps([run.toJSON() for run in runs], indent=4))
 
-    self.reset()
+    self.reset(None)
