@@ -1,0 +1,502 @@
+[
+    {
+        "difficulty": "Easy",
+        "name": "Bash the Goblin Hordes",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Easy",
+        "name": "Worried About Papa",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Easy",
+        "name": "Protect Our Woods",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Easy",
+        "name": "Fort Fumigation",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Easy",
+        "name": "Tomorrow's Prayers",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Easy",
+        "name": "Defeat Goblin Boss",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Easy",
+        "name": "Make Our Skies Safe Again",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Easy",
+        "name": "Guard Our Hometown",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Normal",
+        "name": "Spare the Rod, Spoil the Valley",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Normal",
+        "name": "Eye Have a Problem",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Normal",
+        "name": "Only You Can Prevent Forest Flyers",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Normal",
+        "name": "Saga Grande: The Beginning",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Normal",
+        "name": "Rilla Done Did It",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Normal",
+        "name": "Golemology 101: Desert Golems",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Normal",
+        "name": "Dagger Really Done Did It",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Normal",
+        "name": "Sweep the Volcano",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Normal",
+        "name": "On the Front Lines",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Normal",
+        "name": "I See a Bloody Vision",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Normal",
+        "name": "The Saga Continues: Ice",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Normal",
+        "name": "The Saga Continues: Fire",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Hard",
+        "name": "Rules the Skies",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Hard",
+        "name": "Unthinning the Troops",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Hard",
+        "name": "The Juice of Jealousy",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Hard",
+        "name": "Protect the Rep",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Hard",
+        "name": "Delts of Our Lives",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Hard",
+        "name": "Collector's Digest",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Hard",
+        "name": "I See a Flaming Vision",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Hard",
+        "name": "Hide and Chic",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Hard",
+        "name": "Drumsticks au Griffin",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Hard",
+        "name": "Looming Tower, Leering Eye",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Very Hard",
+        "name": "Wings of Antiquity",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Very Hard",
+        "name": "Seeds of Trouble",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Very Hard",
+        "name": "A Bone to Peak",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Very Hard",
+        "name": "Absolutely No Trespassers",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Very Hard",
+        "name": "Dark Refrain",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Very Hard",
+        "name": "Golemology 102: Volcanic Golems",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Very Hard",
+        "name": "No One Likes Leftovers",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Very Hard",
+        "name": "I See a Deathly Vision",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Very Hard",
+        "name": "The Next Hot Topic",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Extreme",
+        "name": "License to Thrill",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Extreme",
+        "name": "Assault Formation",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Extreme",
+        "name": "Great Goblins of Fire",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Extreme",
+        "name": "Shedding Light on the Pillar",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Extreme",
+        "name": "Saga Illustrated: The Beginning",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Extreme",
+        "name": "General Investigation: Gallanza",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Extreme",
+        "name": "General Investigation: Maglielle",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Extreme",
+        "name": "Learning from the Past",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Extreme",
+        "name": "Saga Illustrated: Inferno",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Extreme",
+        "name": "General Investigation: Id",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Extreme",
+        "name": "Wings of Conflagration",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Extreme",
+        "name": "Wings of Upheaval",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Extreme",
+        "name": "Wings of the Storm",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Extreme",
+        "name": "Wings of Rime",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Extreme",
+        "name": "To Know the Unknowable",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Maniac",
+        "name": "Slimepede",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Maniac",
+        "name": "Rumble in the Desert",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Maniac",
+        "name": "Armor Is Best Served Cold",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Maniac",
+        "name": "A Heated Rivalry",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Maniac",
+        "name": "Death, Taxes, and Goblins",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Maniac",
+        "name": "Icy Eye on the Holy Prize",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Maniac",
+        "name": "Golemology 103: Forest Golems",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Maniac",
+        "name": "Hope in the Machine",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Maniac",
+        "name": "A New Breed",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Maniac",
+        "name": "I See a Grim Vision",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Maniac",
+        "name": "Throw a Smith a Bone",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Maniac",
+        "name": "Revenge of the Hordes",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Maniac",
+        "name": "Serenity Upon the Mount",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Maniac",
+        "name": "Roost and Reign",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Maniac",
+        "name": "Boss Done Wants It Did",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Maniac",
+        "name": "Hallowed Be Thy Ground",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Maniac",
+        "name": "Know Your Enemy",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Maniac",
+        "name": "I See a Chromatic Vision",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Maniac",
+        "name": "The Saga Continues: Wind",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Maniac",
+        "name": "Saga Illustrated: Crystal",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Maniac",
+        "name": "Id Bears Repeating",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Maniac",
+        "name": "The Saga Continues: Silver",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Maniac",
+        "name": "Saga Illustrated: Veil",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Maniac",
+        "name": "The Saga Continues: Earth",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Maniac",
+        "name": "Saga Illustrated: Hellfire",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Maniac",
+        "name": "Saga Grande: Happily Ever After",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Proud",
+        "name": "The Final Report",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Proud",
+        "name": "Blazing Trial",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Proud",
+        "name": "Grounded Trial",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Proud",
+        "name": "Stormy Trial",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Proud",
+        "name": "Frigid Trial",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Proud",
+        "name": "Worst Vacation Ever",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Proud",
+        "name": "Trade Barriers",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Proud",
+        "name": "Melting Pot of Hostility",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Proud",
+        "name": "Banquet of Ice and Corpses",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Proud",
+        "name": "For a Freer Folca",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Proud",
+        "name": "A Quest of Fire and Earth",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Proud",
+        "name": "A Quest of Frost and Storm",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Proud",
+        "name": "The Wolf and the Veil",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Proud",
+        "name": "Calamity Incarnate",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Proud",
+        "name": "As Fierce as the Silver Wolf",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Proud",
+        "name": "Memories of Fire",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Proud",
+        "name": "Thunderbolts and Lightning",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Proud",
+        "name": "Into the Abyss",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Proud",
+        "name": "The Automagod Strikes Back",
+        "description": "todo"
+    },
+    {
+        "difficulty": "Proud",
+        "name": "The Tale of Bahamut's Rage",
+        "description": "todo"
+    }
+]

@@ -3,7 +3,6 @@ import customtkinter
 from customtkinter import *
 from datetime import datetime
 
-from CTkListbox import CTkListbox
 from Run import Run
 
 parse_text = "%s:%s  -  %s  -  %s DPS"
@@ -83,6 +82,8 @@ class MainWindow:
 
   def save_run(self, event=None):
     new_Run = Run(self.time_elapsed, self.parse_total)
+    if (new_Run.IsEmpty()):
+        return
     self.runs.append(new_Run)
 
     app.runsLabel.configure(text=f"Runs saved: {len(self.runs)}")
